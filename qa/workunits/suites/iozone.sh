@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+yum install iozone3
 
 set -ex
 
