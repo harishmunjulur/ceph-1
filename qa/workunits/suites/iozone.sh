@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-yum install iozone3
+sudo yum install iozone3
 echo 'yum install iozone3'
 
 t -ex
