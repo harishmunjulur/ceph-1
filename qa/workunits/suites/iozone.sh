@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 yum install iozone3
+echo 'yum install iozone3'
 
-set -ex
+t -ex
 
 iozone -c -e -s 1024M -r 16K -t 1 -F f1 -i 0 -i 1
 iozone -c -e -s 1024M -r 1M -t 1 -F f2 -i 0 -i 1
