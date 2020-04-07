@@ -1,9 +1,9 @@
 source /etc/os-release
 
-pycmd=$"$python3"
+pycmd=$"python3"
 
 if [ "$VERSION_ID" == "7.7" ]; then
-        pycmd=$"$python"
+        pycmd=$"python"
 fi
 
 ls on empty pool never containing images
