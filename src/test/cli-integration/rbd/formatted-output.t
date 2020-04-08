@@ -1,4 +1,4 @@
-  $ sudo yum install php-xml
+  $ sudo yum -y install php-xml
   $ sudo yum -y install php-pear
 ls on empty pool never containing images
 ========================================
