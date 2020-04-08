@@ -1,5 +1,7 @@
   $ sudo yum -y install php-xml
   $ sudo yum -y install php-pear
+  $ sudo yum -y install xml-twig-tools
+  $ sudo yum -y install perl-XML-Twig
 ls on empty pool never containing images
 ========================================
   $ ceph osd pool create rbd_other 8
