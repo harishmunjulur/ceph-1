@@ -1,4 +1,4 @@
-  $ sudo yum install perl-XML-Twig
+  $ sudo yum install xml-twig-tools
   $ sudo yum -y install php-pear
 ls on empty pool never containing images
 ========================================
