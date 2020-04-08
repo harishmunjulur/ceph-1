@@ -1,4 +1,5 @@
-
+  $ sudo yum install mjson
+  $ sudo yum -y install php-pear
 ls on empty pool never containing images
 ========================================
   $ ceph osd pool create rbd_other 8
