@@ -18,6 +18,7 @@ function expect_false()
 
 function clear_all()
 {
+  ln -sv /proc/self/mounts /etc/mtab	
   fusermount -u mnt || true
 
   rbd snap purge --no-progress $gen || true
