@@ -5,6 +5,7 @@
 
 Write to first and last sectors and make sure we hit the right objects:
 
+
   $ ceph osd pool create hugeimg 12 >/dev/null 2>&1
   $ rbd pool init hugeimg
   $ rbd create --size 4E --object-size 4K --image-feature layering hugeimg/img
