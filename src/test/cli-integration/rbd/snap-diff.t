@@ -19,7 +19,7 @@
   $ rbd diff --from-snap=allzeroes xrbddiff1/xtestdiff1 --format json
   [{"offset":0,"length":1048576,"exists":"true"}]
   $ rbd snap create xrbddiff1/xtestdiff1 --snap=snap1
-  $ sudo um install -y chrony
+  $ sudo yum install -y chrony
   $ sudo systemctl start chronyd
   $ sudo systemctl enable chronyd
   $ sudo systemctl status chronyd
