@@ -19,6 +19,10 @@
   $ rbd diff --from-snap=allzeroes xrbddiff1/xtestdiff1 --format json
   [{"offset":0,"length":1048576,"exists":"true"}]
   $ rbd snap create xrbddiff1/xtestdiff1 --snap=snap1
+  $ yum install -y chrony
+  $ systemctl start chronyd
+  $ systemctl enable chronyd
+  $ systemctl status chronyd
   $ rbd snap list xrbddiff1/xtestdiff1 --format json | python3 -mjson.tool | sed 's/,$/, /'
   [
       {
