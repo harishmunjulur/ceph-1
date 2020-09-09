@@ -11,7 +11,9 @@ tasks:
       - ceph-mgr-diskprediction-cloud
       - ceph-mgr-rook
       - ceph-mgr-ssh
-    extra_packages: ['librados2']
+    extra_packages:
+      -rpm:
+        -librados2
 - print: "**** done installing luminous"
 - ceph:
     mon_bind_addrvec: false
