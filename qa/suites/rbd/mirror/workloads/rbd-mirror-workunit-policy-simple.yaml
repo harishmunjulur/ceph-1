@@ -8,7 +8,7 @@ overrides:
 tasks:
 - workunit:
     clients:
-      cluster1.client.mirror: [rbd/rbd_mirror.sh]
+      cluster1.client.mirror: [rbd/rbd_mirror_journal.sh]
     env:
       # override workunit setting of CEPH_ARGS='--cluster'
       CEPH_ARGS: ''
